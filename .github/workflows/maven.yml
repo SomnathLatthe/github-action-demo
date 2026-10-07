@@ -29,7 +29,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v7
         with:
           image: ${{ secrets.DOCKER_USERNAME }}/springboot-github-cicd-actions
-          tags: v1, latest
+          tags: v${{ github.run_number }}, latest
           registry: docker.io
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
