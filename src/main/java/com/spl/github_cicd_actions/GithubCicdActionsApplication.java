@@ -11,7 +11,7 @@ public class GithubCicdActionsApplication {
 
 	@GetMapping("/welcome")
 	public String welcome(){
-		return "Welcome to Github Actions !";
+		return "Welcome to Github Actions check pull public repository from docker hub!";
 	}
 
 //	echo "# github-action-demo" >> README.md
